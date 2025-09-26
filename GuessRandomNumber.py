@@ -5,7 +5,7 @@ def guess_random_number(tries=0, start=0, stop=0):
     random_number = random.randint(start, stop)
     while tries > 0:
         print(f"Number of tries left: {tries}")
-        guess = int(input(f"Guess a Nnmber between {start} and {stop}: "))
+        guess = int(input(f"Guess a Number between {start} and {stop}: "))
         if random_number == guess:
             print(f"You guessed the correct number!")
             break
@@ -23,7 +23,7 @@ def guess_random_number_linear_search(tries=0, start=0, stop=0):
     print(f"The number for the program to guess: {random_number}")
     for i in range(start, stop):
         print(f"Number of tries left {tries}")
-        print(f"The program is guesssing... {i}")
+        print(f"The program is guessing... {i}")
         if i == random_number:
             print(f"The program guessed the correct Number")
             break
