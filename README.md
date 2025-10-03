@@ -1,5 +1,10 @@
 # Random Number Guessing Game
 
+![Python](https://img.shields.io/badge/Python-3.x-3776AB?logo=python&logoColor=white)
+![Algorithms](https://img.shields.io/badge/Algorithms-Educational-green)
+![License](https://img.shields.io/badge/license-MIT-blue)
+![Status](https://img.shields.io/badge/status-active-success)
+
 A comprehensive Python educational project demonstrating different number guessing algorithms and search techniques through interactive and automated implementations.
 
 ## Overview
@@ -140,6 +145,69 @@ For a range of 1-100:
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Screenshots
+
+> **Note:** Screenshots will be added soon. To see the program in action, run `python GuessRandomNumber.py` and uncomment the desired test case at the bottom of the file.
+
+## Troubleshooting
+
+### Common Issues
+
+**Issue:** Binary search function always uses the same number (71)
+
+**Solution:** This is a known bug in the current implementation. The binary search function has a hardcoded value instead of using `random.randint()`. To fix, replace the hardcoded value with proper random number generation.
+
+---
+
+**Issue:** No output when running the script
+
+**Solution:** All test cases are commented out by default. Open `GuessRandomNumber.py` and uncomment one of the function calls at the bottom (lines after `if __name__ == "__main__":`).
+
+---
+
+**Issue:** "Invalid literal for int()" error during gameplay
+
+**Solution:** Ensure you're entering whole numbers only. Don't include spaces, letters, or decimal points. Press Enter after typing your guess.
+
+---
+
+**Issue:** Game doesn't respect the number of tries limit
+
+**Solution:** Check that the `tries` parameter is set correctly when calling the function. The function will stop after the specified number of attempts.
+
+---
+
+**Issue:** Linear search takes too long for large ranges
+
+**Solution:** This is expected behavior - linear search has O(n) complexity. For large ranges (e.g., 0-1000), use the binary search function which is much faster with O(log n) complexity.
+
+For additional help, review the code comments or check Python documentation for the `random` module.
+
+## Contributing
+
+Contributions are welcome! Please follow these steps:
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/YourFeature`)
+3. Commit your changes (`git commit -m 'Add YourFeature'`)
+4. Push to the branch (`git push origin feature/YourFeature`)
+5. Open a Pull Request
+
+**Priority areas for contribution:**
+- Fix the binary search random number generation bug
+- Add input validation and error handling
+- Implement additional search algorithms (interpolation, exponential)
+- Create a GUI version using Tkinter
+- Add unit tests for each function
+- Implement statistics tracking (average guesses, success rate)
+
+## Contact & Support
+
+- **Author**: José Santiago Echevarria
+- **Issues**: Report bugs or request features via GitHub Issues
+- **Project Type**: Educational programming project demonstrating search algorithms and game development in Python
+- **Learning Focus**: Algorithm complexity (Big O notation), recursion, user interaction, and comparative algorithm analysis
 
 ## Author
 
